@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teller automotriz</title>
+    <style>
+        .container {
+            display: flex; /* Usar Flexbox para alinear las columnas */
+            justify-content: space-between; /* Espaciado entre columnas */
+            margin-bottom: 20px; /* Espacio inferior para separar del siguiente contenido */
+        }
+
+        .column {
+            flex: 1; /* Cada columna ocupa el mismo espacio */
+            margin-right: 10px; /* Espacio entre columnas */
+        }
+
+        .column:last-child {
+            margin-right: 0; /* Eliminar margen derecho en la última columna */
+        }
+
+        .item {
+            margin-bottom: 10px; /* Espacio entre los elementos dentro de las columnas */
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="container">
+            <!-- Primera columna con la información de servicios -->
+            <div class="column">
+                <div class="item">servicios</div>
+                <br>
+                SERVICIOS DE LA VEGA CARSERVICE 
+                <br><br>
+
+                <input type="radio" name="cambio de aceite y filtro" id="aceite">
+                <label for="aceite">cambio de aceite y filtro</label>
+                <br>
+
+                <input type="radio" name="afinacion general" id="afinacion">
+                <label for="afinacion">afinacion general</label>
+                <br>
+
+                <input type="radio" name="mantenimiento a aire acondicionado" id="aire">
+                <label for="aire">mantenimiento de aire acondicionado</label>
+                <br>
+
+                <input type="radio" name="servicio de frenos" id="frenos">
+                <label for="frenos">servicio de frenos</label>
+                <br>
+
+                <input type="radio" name="sustituciin de filtro de aceite" id="filtro">
+                <label for="filtro">sustitucio de filtro de aceite</label>
+                <br>
+
+                <input type="radio" name="alineacion y balanceo" id="alineacion">
+                <label for="alineacion">alineacuion y balanceo</label>
+                <br>
+
+                <input type="radio" name="sistema de enfriamiento" id="enfriamiento">
+                <label for="enfriamiento">sistema de enfriamiento</label>
+                <br>
+
+                <input type="radio" name="amortiguadores" id="amortiguadores">
+                <label for="amortiguadores">amortiguadores</label>
+            </div>
+
+            <!-- Segunda columna con radios para tipo de motor y tipo de auto -->
+            <div class="column">
+                <div class="item">Tipo de Motor:</div>
+                
+                <!-- Radio buttons para tipo de motor -->
+                <input type="radio" name="tipo_motor" id="motor1">
+                <label for="motor1">4 cilindros</label><br>
+
+                <input type="radio" name="tipo_motor" id="motor2">
+                <label for="motor2">6 cilindros</label><br>
+                
+                <input type="radio" name="tipo_motor" id="motor3">
+                <label for="motor3">8 cilindros</label><br>
+
+                <!-- Radio buttons para tipo de auto -->
+                <div class="item">Tipo de Auto:</div>
+                
+                <input type="radio" name="tipo_auto" id="auto1">
+                <label for="auto1">Sedán</label><br>
+
+                <input type="radio" name="tipo_auto" id="auto2">
+                <label for="auto2">Lujo</label><br>
+
+                <input type="radio" name="tipo_auto" id="auto3">
+                <label for="auto3">Deportivo</label><br>
+
+                <input type="radio" name="tipo_auto" id="auto4">
+                <label for="auto4">Familiar</label><br>
+
+                <input type="radio" name="tipo_auto" id="auto5">
+                <label for="auto5">Camioneta</label><br>
+
+            </div>
+
+            <!-- Tercera columna con texto, checkbox y select -->
+            <div class="column">
+                <!-- Campo de texto para datos del auto -->
+                <div class="item">Agenda tu cita</div>
+                <input type="text" placeholder="Marca, Modelo, Año..." style="width: 100%;"><br><br>
+
+                <!-- Checkbox para requiere factura -->
+                <div class="item">
+                    <input type="checkbox" id="requiere_factura">
+                    <label for="requiere_factura">Requiere Factura</label>
+                </div><br>
+
+                <!-- Select para forma de pago -->
+                <div class="item">Forma de Pago:</div>
+                <select style="width: 100%;">
+                    <option value="">Selecciona una opción...</option>
+                    <option value="">Efectivo</option>
+                    <option value="">Tarjeta de Crédito</option>
+                    <option value="">Transferencia Bancaria</option>
+                    <!-- Agrega más opciones según sea necesario -->
+                </select><br><br>
+
+                <!-- Botón para enviar el formulario -->
+                <button type="submit">Enviar</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
