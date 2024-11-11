@@ -75,10 +75,88 @@
                     <br>
                     <input type="checkbox" name="IngredientPeperoni" id="checkBoxPeperoni" value="Peperoni">
                     <label for="checkBoxPeperoni">Peperoni</label>
+
+
+
+
+                    
                 </td>
             </tr>
         </tbody>
         <tfoot></tfoot>
     </table>
-</body>
-</html>
+    <script>
+        //Segundo elemento
+    var nuevo2 = document.createElement("input");
+    var contenido2 = document.createTextNode("Hamburguesa sencilla 35.00 MXN");
+    nuevo2.appendChild(contenido2);
+    opciones[0].appendChild(nuevo2);
+
+    nuevo2.setAttribute("type", "radio");
+    nuevo2.setAttribute("name", "tipoHamburguesa");
+    nuevo2.setAttribute("id", "radiotipoHamburguesa");
+    nuevo2.setAttribute("value", "hambSencilla");
+
+    labelNuevo2 = document.createElement("label");
+    contenidolabel2 = document.createTextNode("Hamburguesa Especial 45.00 MXN");
+    labelNuevo2.appendChild(contenidolabel2);
+    opciones[0].appendChild(labelNuevo2);
+
+
+    //Tercer elemento
+    var nuevo3 = document.createElement("input");
+    var contenido3 = document.createTextNode("Hamburguesa Doble 60.00 MXN");
+    nuevo3.appendChild(contenido3);
+    opciones[0].appendChild(nuevo3);
+
+    nuevo3.setAttribute("type", "radio");
+    nuevo3.setAttribute("name", "tipoHamburguesa");
+    nuevo3.setAttribute("id", "radiotipoHamburguesa");
+    nuevo3.setAttribute("value", "hambSencilla");
+
+    labelNuevo3 = document.createElement("label");
+    contenidolabel3 = document.createTextNode("Hamburguesa Suprema 90.00 MXN");
+    labelNuevo3.appendChild(contenidolabel3);
+    opciones[0].appendChild(labelNuevo3);
+
+
+    //Cuarto elemento
+    var nuevo4 = document.createElement("input");
+    var contenido4 = document.createTextNode("Hamburguesa de pollo");
+    nuevo4.appendChild(contenido4);
+    opciones[0].appendChild(nuevo4);
+
+    nuevo4.setAttribute("type", "radio");
+    nuevo4.setAttribute("name", "tipoHamburguesa");
+    nuevo4.setAttribute("id", "radiotipoHamburguesa");
+    nuevo4.setAttribute("value", "hambSencilla");
+
+    labelNuevo4 = document.createElement("label");
+    contenidolabel4 = document.createTextNode("Hamburguesa de Pavo 105.00 MXN");
+    labelNuevo4.appendChild(contenidolabel4);
+    opciones[0].appendChild(labelNuevo4);
+
+
+    //Quinto elemento
+    var nuevo5 = document.createElement("input");
+    var contenido5 = document.createTextNode("Hamburguesa BBQ");
+    nuevo5.appendChild(contenido5);
+    opciones[0].appendChild(nuevo5);
+
+    nuevo5.setAttribute("type", "radio");
+    nuevo5.setAttribute("name", "tipoHamburguesa");
+    nuevo5.setAttribute("id", "radiotipoHamburguesa");
+    nuevo5.setAttribute("value", "hambSencilla");
+
+    labelNuevo5 = document.createElement("label");
+    contenidolabel5 = document.createTextNode("Hamburguesa BBQ 130.00 MXN");
+    labelNuevo5.appendChild(contenidolabel5);
+    opciones[0].appendChild(labelNuevo5);
+    </script>
+
+
+
+
+
+
+
