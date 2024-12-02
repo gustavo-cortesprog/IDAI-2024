@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones JS</title>
+</head>
+<body>
+    <form id="operacion" action=""></form>
+        <label for="">Escribe el numero 1</label>
+        <input id="numeroUno" type="number">
+        <br>
+        <label for="">Escribe el numero 2</label>
+        <input id="numeroDos" type="number">
+        <br>
+        
+        <button id="boton" type="submit">Sumar los numeros</button>
+        <button id="botonResta" type="button">Restar los números</button>
+    </form>
+
+
+<script>
+    function suma(n1,n2) {
+        var resultado;
+
+        resultado = n1+ n2;
+
+        return resultado;
+        
+    }
+    function resta(n1, n2) {
+        return n1 - n2;
+    } 
+   
+    function operacion(){
+         //Forma 1 de obtener la informacion
+          var inputs = document.getElementsByTagName("input");
+         var numUnoUsuario = parseFloat (inputs [0].value);
+         var numDosUsuario = parseFloat (inputs [1].value);
+
+         var mostrar = suma(numUnoUsuario, numDosUsuario);
+         alert(mostrar);
+         var mostrar = resta(numUnoUsuario, numDosUsuario);
+         alert(mostrar);
+       }
+   
+
+    var boton = document.getElementById("boton");
+    boton.addEventListener("click", operacion);
+
+    operacion.addEventListener("submit", suma);
+    document.write(suma(numUnoUsuario, num));
+
+    document.getElementById("botonResta").addEventListener("click", function() {
+    operacion('resta');
+    });
+</script>
+
+</body>
+</html>

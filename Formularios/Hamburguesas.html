@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Hamburguesas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #ffffff;
+            padding: 20px;
+        }
+        .header-table {
+            width: 100%;
+            display: table;
+        }
+        .header-table div {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .logo {
+            text-align: center;
+        }
+        .logo img {
+            width: 90%;
+        }
+        .business-info {
+            text-align: center;
+        }
+        .business-info h1 {
+            margin: 0;
+            font-size: 36px;
+            color: #333;
+        }
+        .business-info .line {
+            width: 80%;
+            height: 4px;
+            background-color: yellow
+            margin: 10px auto;
+        }
+        .business-info p {
+            margin: 5px;
+            font-size: 18px;
+        }
+        .business-info marquee {
+            margin-top: 10px;
+            font-size: 20px;
+            color: red
+        }
+        hr {
+            border: 0;
+            height: 2px;
+            background-color: aqua
+        }
+        .orders {
+            width: 100%;
+            padding: 20px;
+            margin: 0 auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 20px;
+            vertical-align: top;
+        }
+        td:first-child {
+            width: 33%;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .ingredientes {
+            margin-bottom: 20px;
+        }
+        label {
+            margin-right: 15px;
+        }
+        input[type="text"], select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        .button {
+            background-color: aqua
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: aqua
+        }
+    </style>
+</head>
+<body>
+
+<id></id>
+<header>
+    <div class="header-table">
+        <div class="logo">
+            <img src="../Imagenes/OIP.jpg" alt="Logotipo del negocio">
+        </div>
+
+        <div class="business-info">
+            <h1>Burgers</h1>
+            <div class="line"></div>
+            <p>Av.venuztiano carranza 1196</p>
+            <p>Tel: (55) 8667591070</p>
+            <p>www.burgersgustavo.com.mx</p>
+            <marquee behavior="scroll" direction="left">¡Las mejores hamburguesas del estado! ¡Pide ya!</marquee>
+        </div>
+    </div>
+</header>
+
+<hr>
+
+<div class="order-table">
+    <table>
+        <tr>
+            <td>
+                <h2>Selecciona tu hamburguesa</h2>
+                <p>
+                    <input type="radio" name="tipohamburguesa" id="sencilla" value="35">
+                    <label for="sencilla">Sencilla 35.00$mx</label><br>
+                    <input type="radio" name="tipohamburguesa" id="especial" value="45">
+                    <label for="especial">Especial 45.00$mx</label><br>
+                    <input type="radio" name="tipohamburguesa" id="doble" value="60">
+                    <label for="doble">Doble 60.00$mx</label><br>
+                    <input type="radio" name="tipohamburguesa" id="suprema" value="90">
+                    <label for="suprema">Suprema 90.00$mx</label>
+                </p>
+
+                <h2>Selecciona el tipo de carne</h2>
+                <p>
+                    <input type="radio" name="tipocarne" id="tradicional" value="Tradicional Especial">
+                    <label for="tradicional">Tradicional Especial</label><br>
+                    <input type="radio" name="tipocarne" id="angus" value="Angus">
+                    <label for="angus">Angus</label><br>
+                    <input type="radio" name="tipocarne" id="pollo" value="Pollo">
+                    <label for="pollo">Pollo</label><br>
+                    <input type="radio" name="tipocarne" id="roastbeef" value="Roast Beef">
+                    <label for="roastbeef">Roast Beef</label>
+                </p>
+            </td>
+
+            <td>
+                <h2>Ingredientes</h2>
+                <div class="ingredientes">
+                    <h3>Ingredientes sencillos</h3>
+                    <input type="checkbox" id="tomate" name="ingrediente" value="Tomate">
+                    <label for="tomate">Tomate</label><br>
+                    <input type="checkbox" id="cebolla" name="ingrediente" value="Cebolla">
+                    <label for="cebolla">Cebolla</label><br>
+                    <input type="checkbox" id="quesoamarillo" name="ingrediente" value="Queso Amarillo">
+                    <label for="quesoamarillo">Queso Amarillo</label><br>
+                    <input type="checkbox" id="jamon" name="ingrediente" value="Jamon">
+                    <label for="jamon">Jamón</label><br>
+
+                    <h3>Ingredientes especiales</h3>
+                    <input type="checkbox" id="aguacate" name="ingrediente" value="Aguacate">
+                    <label for="aguacate">Aguacate</label><br>
+                    <input type="checkbox" id="cebollamorada" name="ingrediente" value="Cebolla Morada">
+                    <label for="cebollamorada">Cebolla Morada</label><br>
+                    <input type="checkbox" id="quesogouda" name="ingrediente" value="Queso Gouda">
+                    <label for="quesogouda">Queso Gouda</label><br>
+                    <input type="checkbox" id="pina" name="ingrediente" value="Piña">
+                    <label for="piña">Piña</label><br>
+                    <input type="checkbox" id="champi" name="ingrediente" value="Champiñones">
+                    <label for="champi">Champiñones</label><br>
+                    <input type="checkbox" id="peperoni" name="ingrediente" value="Peperoni">
+                    <label for="peperoni">Peperoni</label>
+                </div>
+            </td>
+
+            <td>
+                <h2>Detalles del pedido</h2>
+                <label for="cantidad">Cantidad de hamburguesas:</label>
+                <input type="text" id="cantidad" name="cantidad">
+
+                <label for="nombre">Nombre del comprador:</label>
+                <input type="text" id="nombre" name="nombre">
+
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion">
+
+                <label for="telefono">Teléfono:</label>
+                <input type="text" id="telefono" name="telefono">
+
+                <label for="tipoentrega">Tipo de entrega:</label>
+                <select id="tipoentrega" name="tipoentrega">
+                    <option value="domicilio">A domicilio</option>
+                    <option value="local">Consumo en local</option>
+                    <option value="llevar">Para llevar</option>
+                </select>
+
+                <button class="button" type="submit">Calcular Pedido</button>
+            </td>
+
+            <td>
+                <h2>Nivel de Cocción</h2>
+                <p>
+                    <input type="radio" id="trescuartos" name="coccion" value="3/4">
+                    <label for="trescuartos">3/4</label><br>
+                    <input type="radio" id="biencocido" name="coccion" value="Bien Cocido">
+                    <label for="biencocido">Bien Cocido</label><br>
+                </p>
+            
+                <h2>Tipo de Queso</h2>
+                <select id="tipoqueso" name="tipoqueso">
+                    <option value="cheddar">Cheddar</option>
+                    <option value="mozarella">Mozzarella</option>
+                    <option value="suizo">Suizo</option>
+                </select>
+            
+                <h2>Agrega salsas</h2>
+                <input type="checkbox" id="mayonesa" name="salsa" value="Mayonesa">
+                <label for="mayonesa">Mayonesa</label><br>
+                <input type="checkbox" id="bbq" name="salsa" value="BBQ">
+                <label for="bbq">BBQ</label><br>
+                <input type="checkbox" id="mostaza" name="salsa" value="Mostaza">
+                <label for="mostaza">Mostaza</label><br>
+            
+                <h2>¿Deseas combo con bebida y papas?</h2>
+                <p>
+                    <input type="radio" id="concombo" name="combo" value="Con Combo">
+                    <label for="concombo">Sí</label><br>
+                    <input type="radio" id="sincombo" name="combo" value="Sin Combo">
+                    <label for="sincombo">No</label><br>
+                </p>
+            
+                <h2>Mensaje Especial</h2>
+                <label for="mensaje">Escribe un mensaje especial para tu pedido:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="30" placeholder="Escribe aquí tus preferencias o notas adicionales"></textarea>
+            </td>
+            
+        </tr>
+    </table>
+</div>
+
+<script>
+var nuevaOpcionSalsa = document.createElement("input");
+nuevaOpcionSalsa.type = "checkbox";
+nuevaOpcionSalsa.id = "jalapeños";
+nuevaOpcionSalsa.value = "Jalapeños";
+nuevaOpcionSalsa.name = "salsa";
+
+var labelJalapenos = document.createElement("label");
+labelJalapenos.htmlFor = "jalapeños";
+labelJalapenos.innerText = "Jalapeños";
+
+var containerSalsas = document.querySelector("h2 ~ input[type='checkbox']");
+containerSalsas.parentNode.appendChild(nuevaOpcionSalsa);
+containerSalsas.parentNode.appendChild(labelJalapenos);
+
+function CalcularPedido() {
+    var total = 0;
+    var tipoHamburguesa = document.querySelector('input[name="tipohamburguesa"]:checked').value;
+    var tipoCombo = document.querySelector('input[name="combo"]:checked').value;
+
+    if (tipoHamburguesa === "35") total += 35;
+    if (tipoHamburguesa === "45") total += 45;
+    if (tipoHamburguesa === "60") total += 60;
+    if (tipoHamburguesa === "90") total += 90;
+
+    if (tipoCombo === "Con Combo") total += 20;
+
+    alert("Total a pagar: " + total + " MXN");
+}
+
+document.querySelector(".button").addEventListener("click", function(e) {
+    e.preventDefault();
+    CalcularPedido();
+});
+
+</script>
+
+</body>
+
+</html>
+
+
+
