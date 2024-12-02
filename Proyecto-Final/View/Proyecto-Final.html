@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Proyecto</title>
+
+    <link rel="stylesheet" href="../Estilos css/Estilos.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.6.0-web/css/all.min.css">
+
+    <link rel="shortcut icon" href="../Img/Logo.jpg">
+
+</head>
+
+<body>
+
+    <!-- MENU PRINCIPAL -->
+    <div class="menu-principal">
+        <div class="logo" id="logo">
+            <img src="../Img/Logo.jpg" alt="Logo">
+        </div>
+
+        <div class="menu-bar" id="menuBar">
+
+            <i class="fas fa-angle-right" id="btnMenuClose"></i>
+
+            <nav class="enlaces" id="enlaces">
+                <ul>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Equipo</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="sociales">
+                <a href="https://www.facebook.com/share/15VHJBzWpB/?mibextid=kFxxJD" target="_blank" style="text-decoration: none; color: #1877f2;">
+                <span class="fab fa-facebook"></span></a>
+
+                <a href="https://www.instagram.com/delavegacarservice?igsh=ODVwaWhtYWlhemtx" target="_blank" style="text-decoration: none; color: #f218a9;">
+                <span class="fab fa-instagram"></span></a>
+
+                <a href="https://x.com/i/flow/login?lang=es" target="_blank" style="text-decoration: none; color: #000000;">
+                    <span class="fa-brands fa-x-twitter"></span></a>
+
+                    <a href="https://www.youtube.com/" target="_blank" style="text-decoration: none; color: #ff0000;">
+                        <span class="fab fa-youtube"></span></a>
+            </div>
+        </div>
+
+        <i class="fas fa-bars" id="btnMenuOpen"></i>
+
+    </div> <!-- FIN DE MENU PRINCIPAL -->
+
+
+    <!-- SLIDER DE PRODUCTOS -->
+    <section id="menu-productos">
+        <div class="contenedor-principal">
+            <button id="btn-izquierda"><span class="fas fa-angle-left"></span></button>
+
+            <div class="slider">
+                <div class="container-productos">
+                    <div class="descripcion-productos">
+                        <h1>¡los mejores servicios!</h1>
+                        <p>De La Vega Car Service</p>
+
+                        <button class="btn"> ¡Solicitalo aquí! <span class="fas fa-angle-right"></span></button>
+                    </div>
+
+                    <div class="imagen-productos">
+                        <img src="../Img/Cupra-Mercedes.jpg" style="width: 400px; height: 300px; " alt="">
+                    </div>
+
+
+
+                </div>
+
+                <div class="container-productos">
+                    <div class="descripcion-productos">
+                        <h1>Ubicación</h1>
+                        <p><i class="fa-solid fa-location-dot"></i>
+                             DIRECCIÓN AV ALMAZÁN 612
+                            <br>
+                            </p>
+                    </div>
+
+                    <div class="imagen-productos">
+                        <img src="../Img/Ubicacion-taller.jpg" style="width: 400px; height: 300px; " alt="">
+                    </div>
+
+
+                </div>
+
+                <div class="container-productos">
+                    <div class="descripcion-productos">
+                        <h1>Corvette 1967</h1>
+                        <p>A este corvette 67 se le hicieron algunos trabajos los cuales son: Cambio de línea de frenos, balatas generales, alineación y balanceo.</p>
+                    </div>
+
+                    <div class="imagen-productos">
+                        <img src="../Img/Corvette.jpg" style="width: 300px; height: 300px; " alt="">
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+            
+
+            <button id="btn-derecha"><span class="fas fa-angle-right"></span></button>
+        </div>
+    </section> <!-- FIN DE SLIDER DE PRODUCTOS -->
+
+    <!-- SECCION SERVICIOS -->
+    <section id="servicios">
+
+        <div class="servicios-titulos">
+            <h2 class="subtitulos">De La Vega Car Service</h2>
+            <h1 class="titulos">Bienvenidos a De La Vega Car Service</h1>
+        </div>
+
+        <div class="servicios-container">
+            <div class="imagen-central">
+                <img src="../Img/Limited.jpg" style="width: 400px; height: 400px; " alt="">
+            </div>
+
+            <div class="items calidad">
+                <p><span class="fa-solid fa-car"></span></p>
+                <p class="titulo-item">Frenos</p>
+                <p class="texto-item">Linea de frenos y cambio de balatas</p>
+            </div>
+            <div class="items ingredientes">
+                <p><span class="fa-solid fa-gears"></span></p>
+                <p class="titulo-item">Afinaciones</p>
+                <p class="texto-item">Afinaciones mayores o menores</p>
+            </div>
+            <div class="items rapidez">
+                <p><span class="fa-solid fa-wrench"></span></p>
+                <p class="titulo-item">Reparación de motor</p>
+                <p class="texto-item">Reparación de cualquier tipo de daño del motor</p>
+            </div>
+            <div class="items entrega">
+                <p><span class="fa-solid fa-fill-drip"></span></p>
+                <p class="titulo-item">Enderezado y Pintura</p>
+                <p class="texto-item">Pintamos cualquier carro del color que se requiera</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PERSONAL -->
+    <section id="equipo">
+        <!-- PASO 01. la clase Persona y crear el primer perfil -->
+         <!-- PASO 02. copiar tres veces mas la división de clase persona para los demas perfiles -->
+        <div class="persona">
+            <img src="../Img/Cesae Martinez.jpg" alt="" class="persona-imagen">
+            <div class="persona-info">
+                 <h2>Cesar Martinez</h2>
+                 <p>Mecanico</p>
+                <div class="social-media">
+                    <a href=""> <span class="fab fa-facebook"></span></a>
+                    <a href=""> <span class="fab fa-instagram"></span></a>
+                    <a href=""> <span class="fab fa-twitter"></span></a>
+                    <a href=""> <span class="fab fa-linkedin-in"></span></a> 
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="persona">
+            <img src="../Img/Guillermo de la Vega.jpg" alt="" class="persona-imagen">
+            <div class="persona-info">
+                 <h2>Guillermo De La Vega</h2>
+                 <p>Jefe De Mecanicos</p>
+                 <div class="social-media">
+                      <a href=""><span class="fab fa-facebook"></span></a>
+                      <a href=""><span class="fab fa-instagram"></span></a>
+                      <a href=""><span class="fab fa-twitter"></span></a>
+                      <a href=""><span class="fab fa-linkedin-in"></span></a>
+                 </div>
+
+            </div>
+       </div>
+
+       <div class="persona">
+        <img src="../Img/Erick Martinez.jpg" alt="" class="persona-imagen">
+        <div class="persona-info">
+            <h2>Erick Barrios</h2>
+            <p>Mecanico</p>
+                 <div class="social-media">
+                      <a href=""><span class="fab fa-facebook"></span></a>
+                      <a href=""><span class="fab fa-instagram"></span></a>
+                      <a href=""><span class="fab fa-twitter"></span></a>
+                      <a href=""><span class="fab fa-linkedin-in"></span></a>
+                 </div>
+
+            </div>
+       </div>
+
+    </section>
+
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto">
+        <div class="titulo-contacto">
+             <h2 class="subtitulos">Que servicios necesitas?</h2>
+             <h1 class="titulos">Contáctanos</h1>
+        </div>
+
+        <form action="" id="formulario">
+             <div class="two-fiels">
+                  <div class="inputConIcon">
+                       <input type="text" id="nombre" name="nombre" class="input-text" placeholder="Nombre">
+                       <i class="fas fa-user"></i>
+                  </div>
+
+                  <div class="inputConIcon">
+                       <input type="email" id="email" name="email" class="input-email" placeholder="Telefono">
+                       <i class="fa-solid fa-phone"></i>
+                  </div>
+             </div>
+
+
+             <div class="fiels">
+                  <div class="inputConIcon textareaIcon">
+                       <textarea name="comentarios" id="comentarios" class="textarea" placeholder="Ingrese su mensaje"></textarea>
+                       <i class="fas fa-comments"></i>
+                  </div>
+             </div>
+
+             <div class="fiels-btn">
+                  <input type="submit" class="btn btn-input" value="Enviar">
+             </div>
+        </form>
+   </section>
+
+    <script src="../Js/app.js"></script>
+</body>
+
+</html>
